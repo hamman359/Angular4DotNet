@@ -1,16 +1,17 @@
-﻿@model string
-<html ng-app="registrationModule">
+﻿<html ng-app="registrationModule">
     <head>
+        <base href="/">
         <title>College Registration</title>
         <link href="~/Content/bootstrap.min.css" rel="stylesheet" />
         <link href="~/Content/bootstrap-slate.min.css" rel="stylesheet" />
     </head>
     <body>
         @RenderBody()
-        <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.3.1/angular.min.js"></script>
+        <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.3.1/angular.js"></script>
+        <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.3.1/angular-route.min.js"></script>
         <script src="~/Scripts/jquery-2.1.1.min.js"></script>
         <script src="~/Scripts/bootstrap.min.js"></script>
         <script src="~/Scripts/registration-module.js"></script>
-        @RenderSection("Javascript")
+        @RenderSection("Javascript", required: false)
     </body>
 </html>
